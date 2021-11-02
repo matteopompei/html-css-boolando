@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    margin: 50px auto;
+    width: 80%;
+}
+
+/* ARTICOLO */
+
+.articolo {
+    width: 350px;
+    cursor: pointer;
+}
+
+.articolo > .foto {
+    position: relative;
+    height: 500px;
+    background-color: #0F0;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto > .like {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #FFF;
+    font-size: 24px;
+}
+
+.foto > .info {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.info > .discount, .info > .sosten {
+    padding: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.info > .discount {
+    background-color: #f00;
+}
+
+.info > .sosten {
+    background-color: #333;
+}
+
+.articolo > .brand {
+    font-size: 14px;
+    color: #333;
+}
+
+.articolo > .label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+.articolo > .price {
+    font-size: 14px;
+    color: #f00;
+    font-weight: bold;
+}
+
+.articolo > .price > .old {
+    text-decoration: line-through;
+    color: #000;
+    font-weight: normal;
+}
+
+/* Foto articoli */
+
+.articolo > .foto:nth-child(1) {
+    background-image: url(../img/1.webp);
+}
+
+.articolo:hover > .foto:nth-child(1) {
+    background-image: url(../img/1b.webp);
+}
